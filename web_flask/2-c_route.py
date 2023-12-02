@@ -10,7 +10,8 @@ Routes:
     variable
     Mandatory use of `strict_slashes=False` in route definition.
 """
-from flask import Flask, escape
+from flask import Flask
+from markupsafe import escape
 
 app = Flask(__name__)
 
