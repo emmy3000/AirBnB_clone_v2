@@ -14,7 +14,8 @@ Routes:
 
 Mandatory use of `strict_slashes=False` in route definition.
 """
-from flask import Flask, escape, render_template, abort
+from flask import Flask, render_template, abort
+from markupsafe import escape
 
 app = Flask(__name__)
 
